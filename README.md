@@ -1,6 +1,8 @@
-# Create vocabulary for file using LISP
+# Create vocabulary and calculate its size for file using LISP
 
-"... count the number of unique distinct words in the file and returns this number."
+_"...count the number of unique distinct words in the file and returns this number"_
+
+_"...Shakespeare had a vocabulary of about 20,000 words (13.5% of the known lexicon)"_
 
 ## Three general approaches: 
 
