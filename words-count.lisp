@@ -33,9 +33,11 @@
     (return-from read-words res)))
 
 (defun count-words (file)
+  "Calculates the number of distinct words in text file"
   (length (read-words file)))
 
 (defun test-count (file wordnum)
+  "Runs integration tests for count-words"
   (if (= wordnum (count-words file))
       (print (format nil "Testcase ~a passed" file))
       (print (format nil "ERROR: Testcase ~a failed! ~d (expected) not equals ~d (actual)"
