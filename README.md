@@ -16,6 +16,8 @@ _"...Shakespeare had a vocabulary of about 20,000 words (13.5% of the known lexi
 * What delimiters are being used in the file? Set of sane defaults may be one solution, that could be extended with optional arguments.
 * Are word wrap rules supported? I.e. is `Some-#Linefeed-word` one word `Some-word` or two different words?
 * Are the `__word__` or `|` (pipe symbol) really words in this context (which is useful for code but not so much for natural languages).
+* CI based on Github Actions?
+* Packaging would be a bit of overengineering I guess.
 
 ## Implementation details:
 
@@ -28,6 +30,12 @@ _"...Shakespeare had a vocabulary of about 20,000 words (13.5% of the known lexi
 
 ## Usage:
 
+### Calculation
+``` lisp
+(count-words "test\Tigres.txt")
+```
+
+### Validation
 ``` sh
 sbcl --script words-count.lisp
 ```
