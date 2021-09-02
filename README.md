@@ -32,7 +32,7 @@ _"...Shakespeare had a vocabulary of about 20,000 words (13.5% of the known lexi
 
 ### Calculation
 ``` lisp
-(count-words "test\Tigres.txt")
+(count-words "tests/Tigres.txt")
 ```
 
 ### Validation
